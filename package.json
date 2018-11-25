@@ -1,0 +1,22 @@
+{
+  "name": "when-expired",
+  "version": "0.1.0",
+  "description": "Returns a Promise that resolves when a certain Date passes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdodov/when-expired.git"
+  },
+  "author": "Hristiyan Dodov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hdodov/when-expired/issues"
+  },
+  "homepage": "https://github.com/hdodov/when-expired#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
