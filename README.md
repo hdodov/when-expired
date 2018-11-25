@@ -25,7 +25,7 @@ var whenExpired = require('when-expired');
 var expireDate = Date.now() + 500;
 
 whenExpired('token', expireDate).then(function () {
-	console.log('interrupt session');
+    console.log('interrupt session');
 });
 
 // Output:
@@ -36,11 +36,11 @@ If you call `whenExpired()` with the same entry id but dfferent date, the old Pr
 
 ```js
 whenExpired('token', Date.now() + 200).then(function () {
-	console.log('first date');
+    console.log('first date');
 });
 
 whenExpired('token', Date.now() + 400).then(function () {
-	console.log('second date');
+    console.log('second date');
 });
 
 // Output:
@@ -51,11 +51,11 @@ If you call `whenExpired()` multiple times with a date that references the same 
 
 ```js
 whenExpired('token', expireDate).then(function () {
-	console.log('first then');
+    console.log('first then');
 });
 
 whenExpired('token', expireDate).then(function () {
-	console.log('second then');
+    console.log('second then');
 });
 
 // Output:
@@ -67,7 +67,7 @@ If you call `whenExpired()` with a date that has already passed, a resolved Prom
 
 ```js
 whenExpired('token', Date.now() - 200).then(function () {
-	console.log('resolved');
+    console.log('resolved');
 });
 
 // Output:
@@ -78,7 +78,7 @@ Invalid dates will return a rejected Promise:
 
 ```js
 whenExpired('token', null).catch(function (err) {
-	console.log(err);
+    console.log(err);
 });
 
 // Output:
