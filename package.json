@@ -2,6 +2,15 @@
   "name": "when-expired",
   "version": "0.1.0",
   "description": "Returns a Promise that resolves when a certain Date passes.",
+  "keywords": [
+    "date",
+    "session",
+    "expire",
+    "token",
+    "promise",
+    "time",
+    "future"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "mocha"
